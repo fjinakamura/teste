@@ -1,0 +1,21 @@
+ <div class="login-page">
+  <div class="form">
+    
+    
+    <div >
+    <form class="login-form" #authForm="ngForm" (ngSubmit)="onSubmit(authForm)">
+      <input type="email" placeholder="usuário" id="email" ngModel name="email"  [(ngModel)]="email" required email [ngClass]="{ 'is-invalid': invalid }"/>
+
+      <input type="password" placeholder="senha"  id="password" ngModel name="password"  [(ngModel)]="password" required minlength="6" [ngClass]="{ 'is-invalid': invalid }"/>
+
+
+      <p *ngIf="invalid" class="error">{{error}}</p>
+      <button type="submit" [disabled]="!authForm.valid">Entrar</button>
+      
+      <p class="message">Não é registrado? <a href="registrar">Registre-se aqui</a></p>
+      <p class="message"><a a href="recuperar">Esqueceu a senha?</a></p>
+    </form>
+    </div>
+  </div>
+</div>
+

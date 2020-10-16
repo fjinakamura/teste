@@ -1,0 +1,52 @@
+.carousel-item img{
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+    text-transform: uppercase;
+    object-fit: cover;
+}
+.loremipsum2{
+    font-size: 16px;
+    text-align: justify;
+    margin-top: 10px;
+    text-transform: none;
+}
+.mg-tb-infraestructure{
+    margin-top: 55px;
+    margin-bottom: 55px;
+}
+
+i.fas{
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    border-radius: 100%;
+    display: inline-block;
+    height: 3.25em;
+    line-height: 3.25em;
+    text-align: center;
+    width: 3.25em;
+    background-color: #2d2d2d;
+    color: #ffc851;
+    position: relative;
+    text-decoration-color: initial;
+    border-bottom-color: initial;
+    text-decoration: none;
+    border-bottom: none;
+}
+i.fab{
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    border-radius: 100%;
+    display: inline-block;
+    height: 3.25em;
+    line-height: 3.25em;
+    text-align: center;
+    width: 3.25em;
+    background-color: #2d2d2d;
+    color: #ffc851;
+    position: relative;
+    text-decoration-color: initial;
+    border-bottom-color: initial;
+    text-decoration: none;
+    border-bottom: none;
+}

@@ -1,0 +1,81 @@
+
+<!-- Animate.css -->
+
+
+	
+<div id="page" style="height:100%" >
+	
+	
+	<div class="mb-4">
+		<div class="container">
+			<div class="about-content mb-4 mt-4">
+				<div class="row animate-box">
+					<div class="col-md-6 line-spacing">
+						<div class="desc">
+							<h3 class="mg-tb">{{user?.name}}</h3>
+                            <p>Email: {{user?.email}}</p>
+                            <p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci rem dolorem nesciunt perferendis quae amet deserunt eum labore quidem minima.</p>
+							
+							
+						</div>
+						
+                        <div style="text-align: center; margin-top: 15px;">
+                            <button (click)="showForm()" class="botao botaoAtt">Atualizar Dados</button>
+                        </div>
+                    </div>
+                    
+					<div class="col-md-6  line-spacing">
+						<div class="desc">
+							<h3 class="mg-tb">Plano</h3>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quo est quis mollitia ratione magni assumenda repellat atque modi temporibus tempore ex. Dolore facilis ex sunt ea praesentium expedita numquam?</p>
+							<p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci rem dolorem nesciunt perferendis quae amet deserunt eum labore quidem minima.</p>
+							<ul>
+								<li>Lorem ipsum dolor sit amet consectetur</li>
+								<li>Assumenda repellat atque modi temporibus</li>
+								<li>Dolore facilis ex sunt ea praesentium</li>
+							</ul>
+						</div>
+						
+					</div>
+				</div>
+            </div>
+            
+            <div class="row justify-content-md-center mt-10" *ngIf="profileForm">
+                <div>
+                    <div class="form">
+                    
+                    
+                    <div>
+                    <form class="login-form" #authForm="ngForm" (ngSubmit)="hideForm()">
+                        <p>Email</p>
+                        <input type="email" placeholder="teste@gmail.com" id="email" ngModel name="email"   required email />
+                
+                        <p>Nome</p>
+                        <input type="text" placeholder="Flavio"/>
+                
+                        <p>Senha</p>
+                        <input type="password" placeholder="******"  id="password" ngModel name="password"  required minlength="6"/>
+                        
+                        <button type="submit" [disabled]="!authForm.valid" class="botao">Atualizar Dados</button>
+                        
+                        
+                    </form>
+                    </div>
+                </div>
+              </div> 
+              </div>
+
+        </div>
+        
+	</div>
+
+	
+
+	
+	</div>
+
+	
+	
+
+
+

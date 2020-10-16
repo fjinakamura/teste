@@ -1,0 +1,118 @@
+
+ <header>
+  <input type="checkbox" id="control-nav" />
+<label for="control-nav" class="control-nav"></label>
+<label for="control-nav" class="control-nav-close"></label>
+
+<nav class="header-nav header-mobile float-r">
+  
+  <div class="container flex space-between ">
+   <div class="flex align-center align-center brand hide-mobile">
+    <a href="#">
+      <img alt="Fitness Center" class="logo-acad"src="assets/images/logo-acad.png">
+    </a>
+  </div>
+    
+  
+  <div class="flex flex-one align-center hide-mobile">
+    <div style="line-height: 60px;">
+      <ul class="flex nav-list">
+        <li><a class="middle" routerLink="/" title="Página Inicial">Página Inicial</a></li>
+        <li><a class="middle" routerLink="/sobre" title="Sobre">Sobre</a></li>
+        <li><a class="middle" routerLink="/infraestrutura" title="Infraestrutura">Infraestrutura</a></li>
+        <li><a class="middle" href="#planos" title="Planos">Planos</a></li>
+        <li><a class="middle" routerLink="/sobre" title="Equipe">Equipe</a></li>
+        <li><a class="middle" href="#contato" title="Contato">Contato</a></li>
+        <li><a class="middle" routerLink="/login" title="Entrar" *ngIf="!currentUser">Entrar</a></li>
+
+        
+        <li><a class="middle" *ngIf="currentUser" routerLink="/profile">Perfil</a></li>
+        <li><a class="middle" *ngIf="currentUser" (click)="sair()" >Sair</a></li>
+        
+        
+      </ul>
+    </div>
+    
+  </div>
+
+  <div class="show-mobile">
+    
+      <ul>
+        <li><a class="middle" routerLink="/" title="Página Inicial">Página Inicial</a></li>
+        <li><a class="middle" routerLink="/sobre" title="Sobre">Sobre</a></li>
+        <li><a class="middle" routerLink="infraestrutura" title="Infraestrutura">Infraestrutura</a></li>
+        <li><a class="middle" href="#planos" title="Planos">Planos</a></li>
+        <li><a class="middle" routerLink="sobre" title="Equipe">Equipe</a></li>
+        <li><a class="middle" href="#contato" title="Contato">Contato</a></li>
+        <li><a class="middle" routerLink="/login" title="Entrar">Entrar</a></li>
+        
+      </ul>
+    
+    
+  </div>
+
+  </div>
+</nav>
+</header>
+
+<router-outlet></router-outlet> <!-- caminho que todos os filhos vão estar, os filhos "about.html, homepage.html, etc, vão carregar aqui dentro, entre o header e footer" -->
+
+<footer class="footer-distributed">
+  <div class="footer2">
+  <div class="footer-left">
+
+    <h3><span class="amarelo">Fitness</span>Center</h3>
+
+    <p class="footer-links">
+      <a href="#inicial" class="link-1">Página Inicial</a>
+      
+      <a href="#sobre">Sobre</a>
+    
+      <a href="#infraestrutura">Infraestrutura</a>
+    
+      <a href="#contato">Contato</a>
+    </p>
+
+    <p class="footer-company-name">Fitness Center © 2020</p>
+  </div>
+
+  <div class="footer-center">
+
+    <div>
+      <i class="fa fa-map-marker"></i>
+      <p><span>444 S. Cedros Ave</span> Foz do Iguaçu, Paraná</p>
+    </div>
+
+    <div>
+      <i class="fa fa-phone-alt"></i>
+      <p>Telefone:+45.3528-7354</p>
+    </div>
+
+    <div>
+      <i class="fa fa-envelope"></i>
+      <p><a href="mailto:fitnesscenter@suporte.com">fitnesscenter@suporte.com</a></p>
+    </div>
+
+  </div>
+
+  <div class="footer-right">
+
+    <p class="footer-company-about">
+      <span>Sobre nós</span>
+      Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+    </p>
+
+    <div class="footer-icons">
+
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-github"></i></a>
+
+    </div>
+
+  </div>
+</div>
+</footer>
+
+
